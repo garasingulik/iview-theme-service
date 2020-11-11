@@ -34,3 +34,9 @@ export const HelloRequest = iots.interface({
 })
 
 export type HelloRequestType = iots.TypeOf<typeof HelloRequest>
+
+export const ThemeColorsRequest = iots.interface({
+  primaryColor: iots.string
+})
+
+export type ThemeColorsRequestType = iots.TypeOf<typeof ThemeColorsRequest>

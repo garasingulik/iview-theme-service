@@ -1,7 +1,7 @@
 {
-  "name": "typescript-express-template",
+  "name": "iview-theme-service",
   "version": "0.0.1",
-  "description": "TypeScript and Express Project Template",
+  "description": "Theme Service for ViewUI",
   "main": "build/src/server.js",
   "types": "build/src/server.d.ts",
   "files": [
@@ -15,11 +15,13 @@
     "watch": "tsc --watch",
     "start": "node build/src/server.js",
     "dev": "TS_NODE_FILES=true ts-node src/server.ts",
-    "lint": "eslint **/*.ts --fix"
+    "lint": "eslint **/*.ts --fix",
+    "theme:init": "iview-theme init $THEME_DIR",
+    "theme:build": "cd $THEME_DIR && iview-theme build"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/garasingulik/typescript-express-template.git"
+    "url": "git+https://github.com/garasingulik/iview-theme-service.git"
   },
   "keywords": [
     "typescript",
@@ -31,9 +33,9 @@
   "author": "Indra Gunawan <indra@garasingulik.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/garasingulik/typescript-express-template/issues"
+    "url": "https://github.com/garasingulik/iview-theme-service/issues"
   },
-  "homepage": "https://github.com/garasingulik/typescript-express-template#readme",
+  "homepage": "https://github.com/garasingulik/iview-theme-service#readme",
   "dependencies": {
     "axios": "^0.21.0",
     "dotenv": "^8.2.0",
@@ -41,6 +43,7 @@
     "fp-ts": "^2.8.5",
     "io-ts": "^2.2.12",
     "io-ts-reporters": "^1.2.2",
+    "iview-theme": "^1.1.0",
     "tswrap": "^1.0.4"
   },
   "devDependencies": {

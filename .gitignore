@@ -105,3 +105,6 @@ dist
 
 # Extra
 [B|b]uild/
+
+# themes
+public/themes
